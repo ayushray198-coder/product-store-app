@@ -85,7 +85,7 @@ export const ProductDetails = () => {
                             ${product.price}
                         </p>
 
-                        <span className='inline-block mt-4 px-4 bg-blue-100 text-blue-700 rounded-full text-sm font font-medium'>
+                        <span className='inline-block mt-5 px-4 bg-blue-100 text-blue-700 rounded-full text-sm font font-medium'>
                             {product.category}
                         </span>
                         <div className="mt-5 flex items-center gap-2">
@@ -99,6 +99,17 @@ export const ProductDetails = () => {
                             <span className="text-gray-500">
                                 ({product.rating.count} Reviews)
                             </span>
+
+                        </div>
+                        <div className="mt-8 flex gap-4">
+
+                            <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
+                                Buy Now
+                            </button>
+
+                            <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50">
+                                Add to Cart
+                            </button>
 
                         </div>
                     </div>
@@ -115,17 +126,7 @@ export const ProductDetails = () => {
                     </p>
 
                 </div>
-                <div className="mt-8 flex gap-4">
 
-                    <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700">
-                        Buy Now
-                    </button>
-
-                    <button className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-50">
-                        Add to Cart
-                    </button>
-
-                </div>
             </div>
         </div>
     )
